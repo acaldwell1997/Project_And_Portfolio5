@@ -1,0 +1,48 @@
+.calorieIn, .calorieOut{
+	width: 50%;
+}
+
+.decor, .info fieldset div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container{
+	margin: 5%;
+}
+
+
+table{
+	width: 75%;
+}
+
+td{
+	text-align: center;
+}
+
+tr:first-of-type{
+	background-color: dimgrey;
+	
+}
+
+tr:not(:first-of-type):nth-child(odd){
+	background-color: lightgrey;
+}
+
+tr:not(:first-of-type):nth-child(even){
+	background-color: darkgray;
+}
+
+td, th{
+	padding: 2%;
+	font-size: 1.25em;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+.sinfo, .sdel, .spref{
+	width: 30%;
+}
