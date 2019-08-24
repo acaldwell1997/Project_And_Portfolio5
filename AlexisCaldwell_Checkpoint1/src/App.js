@@ -5,7 +5,7 @@ import Footer from './components/footer/Footer';
 import Main from './components/Main/Main';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-function App() {
+function App() {	
   return (
     <Router>
 		<div className="container">
@@ -16,5 +16,6 @@ function App() {
 	</Router>
   ); 
 }
+
 
 export default App;

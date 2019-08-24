@@ -8,7 +8,7 @@
 	justify-content: space-between;
 }
 
-.container{
+.containers{
 	margin: 5%;
 }
 
@@ -26,11 +26,11 @@ tr:first-of-type{
 	
 }
 
-tr:not(:first-of-type):nth-child(odd){
+tbody:nth-child(odd) tr{
 	background-color: lightgrey;
 }
 
-tr:not(:first-of-type):nth-child(even){
+tbody:nth-child(even) tr{
 	background-color: darkgray;
 }
 
@@ -44,5 +44,61 @@ ul li{
 }
 
 .sinfo, .sdel, .spref{
-	width: 30%;
+	width: 35%;
+
 }
+
+.sinfo fieldset, .sdel fieldset, .spref fieldset{
+		height: 20em;
+}
+
+header{
+	background-color: #64C3FF;
+}
+
+fieldset div{
+	margin: 2.5%;
+}
+
+legend{
+	font-size: 1.5em;
+}
+
+fieldset{
+	margin: 2%;
+}
+
+.calorieIn fieldset, .calorieOut fieldset{
+	height: 20em;
+}
+
+.rec{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+article{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.rec img{
+	width: 800px;
+	height: 600px;
+	
+}
+
+.rec h3{
+	width: 50%;
+}
+
+.sinfo2{
+	width: 100%;
+	
+}
+
