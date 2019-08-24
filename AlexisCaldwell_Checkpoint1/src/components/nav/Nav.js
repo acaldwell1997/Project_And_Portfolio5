@@ -26,7 +26,8 @@ const styles={
 	navA:{
 	margin: '5%',
 		textDecoration: 'none',
-		color: '#515151',
+		color: '#ffffff',
+		fontSize: '1.25em',
 		
 }
 }

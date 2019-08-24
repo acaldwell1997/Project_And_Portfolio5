@@ -6,6 +6,15 @@ import RecipeDetails from '../Pages/RecipeDetails';
 import Settings from '../Pages/Settings';
 
 class Main extends Component{
+	 componentDidMount() {
+    window.addEventListener('load', this.handleLoad);
+ }
+
+ handleLoad() {
+ let bannerColor = localStorage.getItem("color");
+		document.querySelector('header').style.backgroundColor = bannerColor;
+ }
+
 	render(){
 		return(
 			<section className="content main-content">

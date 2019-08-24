@@ -6,17 +6,21 @@ import Button from '../buttons/Button';
 const Preferences = props =>{
 	return (
 		<form style={styles.myForm}>
-			<p> Choose Your Preference: </p> 
-			<div style={styles.post} id="add">
-				<label> Color Theme: </label>        
-				<input type="radio" value="ff0000" /> Red
-				<input type="radio" value="00ff00" /> Green
-				<input type="radio" value="0000ff"/> Blue
-				<Button btnText="Save" />
-			</div>
+			<div style={styles.post} className="colorChoices">     
+                <button type="button" style={styles.first}> Blue </button>
+                <button type="button" style={styles.second}> Red </button>
+                <button type="button" style={styles.third}> Pink </button> 
+		</div>
+		<div style={styles.post} className="colorChoices">   
+                <button type="button" style={styles.fourth}> Green </button>
+                <button type="button" style={styles.fifth}> Purple </button>
+                <button type="button" style={styles.sixth}> Orange </button>
+		</div>
 		</form>
 	)
 }
+
+
 	
 	
 export default Preferences;
@@ -38,14 +42,50 @@ const styles={
 	},
 	post:{
 		display: 'flex',
-		flexDirection: 'column',
+		flexDirection: 'row',
 		justifyContent: 'space-between',
-		margin: '0 4% 1% 4%',
+		margin: '0 4% 4% 4%',
 	},
 	labels:{
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-	}
+	},
+	first:{
+		backgroundColor: '#64C3FF',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+	},
+	second:{
+		backgroundColor: '#B22222',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+	},
+	third:{
+		backgroundColor: '#f47fbb',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+	},
+	fourth:{
+		backgroundColor: '#90c070',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+	},
+	fifth:{
+		backgroundColor: '#d896ff',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+	},
+	sixth:{
+		backgroundColor: '#FF5B21',
+		color: "transparent",
+		width: '80px',
+		height: '80px'
+}
 }

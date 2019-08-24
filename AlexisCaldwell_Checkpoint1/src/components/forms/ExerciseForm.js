@@ -5,19 +5,19 @@ import Button from '../buttons/Button';
 
 const ExerciseForm = props =>{
 	return (
-		<form style={styles.myForm}>
+		<form id="addExercise" style={styles.myForm}>
 		<p> Add an Exercise: </p> 
 		<div style={styles.post} id="add">
 		<div style={styles.labels}>
 		<label> Exercise: </label>
-			<input style={styles.input2} type="text" id="exercise" />
+			<input style={styles.input2} type="text" id="exercise" placeholder="Exercise" />
 		</div>
 		<div style={styles.labels}>
 		<label> Calories Burned per Minute: </label> 
-		 	<input style={styles.input} type="number" id="burned" />
+		 	<input style={styles.input} type="number" min="0" id="burned" placeholder="Burned" />
 		
 		<label> Minutes Exercising: </label> 
-		 	<input style={styles.input} type="number" id="minutes" />
+		 	<input style={styles.input} type="number" min="0" id="minutes" placeholder="Minutes"/>
 		</div>
 		<Button btnText="Add Exercise" />
 		</div>

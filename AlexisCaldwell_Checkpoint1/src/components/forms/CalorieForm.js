@@ -3,7 +3,7 @@ import Button from '../buttons/Button';
 
 const CalorieForm = props =>{
 	return (
-	<div>
+	<div id="addMeal">
 		<form style={styles.myForm}>
 		<p> Add a Meal: </p> 
 		<div style={styles.post} id="add">
@@ -18,14 +18,14 @@ const CalorieForm = props =>{
 		</div>
 		<div style={styles.labels}>
 		<label> Food Item: </label>
-			<input style={styles.input2} type="text" id="food" />
+			<input style={styles.input2} type="text" id="food" placeholder="Food" />
 		</div>
 		<div style={styles.labels}>
 		<label> Calories Per Serving: </label> 
-		 	<input  style={styles.input} type="number" id="calories" />
+		 	<input  style={styles.input} type="number" min="0" id="calories" placeholder="Calories" />
 
 		<label> Servings: </label> 
-		 	<input style={styles.input} type="number" id="servings" />
+		 	<input style={styles.input} type="number" min="0" id="servings" placeholder="Servings" />
 		</div>
 		<Button btnText="Add Meal" />
 		</div>

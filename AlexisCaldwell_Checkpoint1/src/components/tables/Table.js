@@ -6,26 +6,34 @@ import Button from '../buttons/Button';
 const ExerciseForm = props =>{
 	return (
 		<table>
-			<tr>
-				<th> Weight </th>
-				<th> Weight Loss </th>
-				<th> Weight Loss Percentage </th>
-			</tr>
-			<tr>
-				<td> 150lbs </td>
-				<td> 0lbs </td>
-				<td> 0% </td>
-			</tr>
-			<tr>
-				<td> 145lbs </td>
-				<td> 5lbs </td>
-				<td> 3.38983% </td>
-			</tr>
-			<tr>
-				<td> 135lbs </td>
-				<td> 10lbs </td>
-				<td> 7.14286% </td>
-			</tr>
+			<thead>
+				<tr>
+					<th> Weight </th>
+					<th> Weight Loss </th>
+					<th> Weight Loss Percentage </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 150lbs </td>
+					<td> 0lbs </td>
+					<td> 0% </td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td> 145lbs </td>
+					<td> 5lbs </td>
+					<td> 3.38983% </td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td> 135lbs </td>
+					<td> 10lbs </td>
+					<td> 7.14286% </td>
+				</tr>
+			</tbody>
 		</table>
 	)
 }

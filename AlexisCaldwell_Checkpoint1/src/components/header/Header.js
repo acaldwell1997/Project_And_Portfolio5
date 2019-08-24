@@ -19,7 +19,7 @@ const styles={
 		width: '90%',
 	},
 	h1:{
-		color: '#515151',
+		color: '#ffffff',
 		fontWeight: 'normal',
 	}
 }
