@@ -1,25 +1,37 @@
-.calorieIn, .calorieOut{
+
+/* WIDTHS =========================================================== */
+
+.calorieIn, .calorieOut,.sinfo, .spref, .artContain div{
 	width: 50%;
 }
 
-.decor, .info fieldset div{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+details{
+	width: 65%;
 }
-
-.containers{
-	margin: 5%;
-}
-
 
 table{
 	width: 75%;
 }
 
-td{
-	text-align: center;
+.calorieIn table, .calorieOut table, .calorieIn details, .calorieOut details, .sinfo2,.rec h3, article, .rec, .rec img{
+	width: 100%;
 }
+
+/* HEIGHTS =========================================================== */
+
+
+
+.sinfo fieldset, .spref fieldset, .calorieIn fieldset, .calorieOut fieldset{
+	height: 20em;
+}
+
+
+.rec img{
+	height: 600px;
+}
+
+
+/* COLORS ====================================================== */
 
 tr:first-of-type{
 	background-color: dimgrey;
@@ -34,71 +46,106 @@ tbody:nth-child(even) tr{
 	background-color: darkgray;
 }
 
-td, th{
-	padding: 2%;
-	font-size: 1.25em;
+header{
+	background-color: #64C3FF;
+}
+
+
+thead tr th{
+	color: #ffffff;
+}
+
+/* DISPLAYS ============================================= */
+
+
+.decor, .info ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.rec, article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+.artContain{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
 }
 
 ul li{
 	list-style-type: none;
 }
 
-.sinfo, .sdel, .spref{
-	width: 35%;
 
-}
+/* BOX MODELS ==================================== */
 
-.sinfo fieldset, .sdel fieldset, .spref fieldset{
-		height: 20em;
-}
-
-header{
-	background-color: #64C3FF;
-}
-
-fieldset div{
-	margin: 2.5%;
-}
-
-legend{
-	font-size: 1.5em;
+.containers{
+	margin: 5%;
 }
 
 fieldset{
 	margin: 2%;
 }
 
-.calorieIn fieldset, .calorieOut fieldset{
-	height: 20em;
+fieldset div{
+	margin: 2.5%;
 }
 
-.rec{
-	width:100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
+/* FONTS ========================================== */
+
+td, .calorieIn summary, .calorieOut summary{
+	text-align: center;
 }
 
-article{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+
+legend{
+	font-size: 1.5em;
 }
 
-.rec img{
-	width: 800px;
-	height: 600px;
-	
+
+ol li {
+	text-align: justify;
 }
 
-.rec h3{
-	width: 50%;
+
+/* OTHERS/COMBOS ========================================== */
+
+td, th{
+	padding: 2%;
+	font-size: 1.25em;
 }
 
-.sinfo2{
-	width: 100%;
-	
+fieldset{
+	overflow: scroll;
 }
 
+.calorieIn summary, .calorieOut summary{
+	padding: 1%;
+	color: #313131;
+	background-color: #ebebeb;
+	margin: 5%;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid #515151;
+	display: inline;
+	width: 30%;
+}
+
+.info li{
+	font-size: 1.5em;
+
+}
