@@ -1,7 +1,7 @@
 import React from 'react';
 const Button = props =>{
 	return (
-		<button className="postBtn" type="button" style={styles.Button} onClick={props.searchApi} >
+		<button className="postBtn" type="button" style={styles.Button} /*onClick={props.searchApi} */>
 			{props.btnText}
 		</button>
 	)

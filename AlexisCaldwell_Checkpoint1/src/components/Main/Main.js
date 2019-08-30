@@ -7,10 +7,12 @@ import Settings from '../Pages/Settings';
 
 class Main extends Component{
 	 componentDidMount() {
+		 //adds event listener
     window.addEventListener('load', this.handleLoad);
  }
 
  handleLoad() {
+	 //updates the header to match the color in the local host 
  let bannerColor = localStorage.getItem("color");
 		document.querySelector('header').style.backgroundColor = bannerColor;
  }

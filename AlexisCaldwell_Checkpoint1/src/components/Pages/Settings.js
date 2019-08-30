@@ -11,22 +11,26 @@ import API from '../functions/api';
 
 class Settings extends Component {
 		 componentDidMount() {
+			 //adds event listeners to colored buttons
 	let coloredButton = document.querySelectorAll('.colorChoices button');
     for (let i = 0; i < coloredButton.length; i++){
         coloredButton[i].addEventListener('click', this.colorChanged);
     }
+			 //on load event listener
 	window.addEventListener('load', this.handleLoadS);
+			 //adds event listener to button to update info
 	document.querySelector('.sinfo button').addEventListener('click', this.info);
  }
 	
 	 handleLoadS() {
+		 //put a value in the text fields for the update info
  		document.querySelector('#nameUpdate').value = localStorage.getItem("name");
 		document.querySelector('#heightUpdate').value = localStorage.getItem("height");
 		document.querySelector('#weightUpdate').value = localStorage.getItem("weight");
  }
 	
 	colorChanged(event){
-		    
+		    //gets the selected color and update the header background color to the selected color
         let target = event.target;
         let bgColor = target.style.backgroundColor;
 		document.querySelector('header').style.backgroundColor = bgColor;
@@ -34,6 +38,7 @@ class Settings extends Component {
 	}
 	
 	info(){
+		//adds new info to the localhost if a value was inputted
 		if(document.querySelector('#nameUpdate').value != ""){
 		localStorage.setItem("name", document.querySelector('#nameUpdate').value);
 		}
@@ -58,13 +63,6 @@ class Settings extends Component {
 				<fieldset> 
 					<legend> Change Your Preferences </legend>
 					<Preferences />
-				</fieldset>
-			</section>
-			<section className="sdel">
-				<fieldset> 
-					<legend> Clear Your Favorites </legend>
-			<p> Are you sure you want to delete your saved recipes? You will be unable to recover this. </p>
-					<Button btnText="Delete" />
 				</fieldset>
 			</section>
 			</section>
